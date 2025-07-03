@@ -1,0 +1,768 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
+  <link rel="icon" href="/img/avatar.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Ranger">
+  <meta name="keywords" content="blog, 技術, 生活, programming">
+  
+    <meta name="description" content="記憶有點久遠了... 看著相簿慢慢recall來到成大的第一個學期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="成大資工 大一上(113-1)">
+<meta property="og:url" content="https://coolranger.github.io/2025/07/03/ncku1131/index.html">
+<meta property="og:site_name" content="Ranger&#39;s Blog">
+<meta property="og:description" content="記憶有點久遠了... 看著相簿慢慢recall來到成大的第一個學期">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://coolranger.github.io/img/post/ncku1131_index.png">
+<meta property="article:published_time" content="2025-07-02T16:31:08.000Z">
+<meta property="article:modified_time" content="2025-07-03T20:24:10.376Z">
+<meta property="article:author" content="Ranger">
+<meta property="article:tag" content="academic">
+<meta property="article:tag" content="ncku">
+<meta property="article:tag" content="csie">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://coolranger.github.io/img/post/ncku1131_index.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>成大資工 大一上(113-1) - Ranger&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"coolranger.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Ranger&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-bookmark-fill"></i>
+                <span>Others</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/logs/" target="_self">
+                    <i class="iconfont icon-note"></i>
+                    <span>Site logs</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/subscribe/" target="_self">
+                    <i class="iconfont icon-rss"></i>
+                    <span>Subscription</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/post/ncku1131_banner.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="成大資工 大一上(113-1)"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-07-03 00:31" pubdate>
+          July 3, 2025 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          17 mins
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> views
+        </span>
+        
+
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">成大資工 大一上(113-1)</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>成為大學生的第一個學期，充滿著未知和新鮮感。邊整理相簿邊發現有好多事情可以分享，所以預計會佔不少篇幅~</p>
+<h1 id="修課與成績"><a href="#修課與成績" class="headerlink" title="修課與成績"></a>修課與成績</h1><p><strong>系上必修:</strong></p>
+<ul>
+<li>微積分(一) <strong>94 A+</strong></li>
+<li>普通物理學(一) <strong>79 B-</strong></li>
+<li>程式設計(一) <strong>99 A+</strong></li>
+<li>數位電路導論 <strong>84 A-</strong></li>
+</ul>
+<p><strong>二外、系外選修、通識:</strong></p>
+<ul>
+<li>日文(五) <strong>92 A+</strong></li>
+<li>日語閱讀 <strong>99 A+</strong></li>
+<li>敘事曲向的全人生涯發展 <strong>88 A</strong></li>
+<li>行動數位文化資產 <strong>85 A+</strong></li>
+</ul>
+<p><strong>其他:</strong></p>
+<ul>
+<li>踏溯台南 <strong>89 A</strong></li>
+<li>基礎體適能運動與健康知能</li>
+<li>服務學習(一)</li>
+</ul>
+<p><strong>總學分數:21 加權平均:90.71 班排:7 系排:13</strong></p>
+<p>這學期的成績是靠程式設計和選修救起來的，雖然是第一次選課，但很幸運的有選到一些給分很甜的通識。<br>仔細看可以發現有許多分數是被卡在差一分升級的尷尬情況，GPA大概是少了0.1多。<br>但老實說我也不知道GPA不出國的話有甚麼用，系排還是比較重要。</p>
+<h2 id="微積分-一"><a href="#微積分-一" class="headerlink" title="微積分(一)"></a>微積分(一)</h2><p>大概九成科系的必修，原本以為數學吃很重的資工系微積分會教很難，結果大多都是代原文書上面的例題。就連ε-δ定理也只在小考考過一題，而且教授上課會把哪邊會考哪邊不會考都說清楚，是一門蠻容易準備的課，也因為這樣到期末前除了有考試以外真的沒去上過幾次課:)。<br>成績占比是四次小考(擇優取三)20%、出席5%(沒點過名，等於直接送5分)、期中35%、期末40%。</p>
+<h3 id="小考"><a href="#小考" class="headerlink" title="小考"></a>小考</h3><p>小考都是在早八的助教課考的，考前助教會用email通知，不用擔心因為沒去上課而不知道要考試。第一次小考算是大學的第一次考試，還不是很清楚和高中的差異，本來預估會45分(滿分50)結果因為一些事情沒有寫清楚被扣到38，同樣預估45分的室友被扣到16分，超好笑。<br>有了第一次的經驗後，之後的小考就漸入佳境了，分別拿了50、50、46，算是幾乎拿滿了小考分。</p>
+<h3 id="期中、期末"><a href="#期中、期末" class="headerlink" title="期中、期末"></a>期中、期末</h3><p>兩次分別拿了92分、91分。期中考的難度雖然說不難但也不至於到簡單，但期末不知道是因為想要救某些人還是怎樣，第一題竟然出 <em>$e^{\frac{\ln 5}{3}}$的數值是多少</em> 這種高中基本題，算是嚇到我了，大概會永遠記得這題。</p>
+<h3 id="成績"><a href="#成績" class="headerlink" title="成績"></a>成績</h3><p>最後和自己算得差不多，好像被微調了一分左右。</p>
+<h2 id="普通物理學-一"><a href="#普通物理學-一" class="headerlink" title="普通物理學(一)"></a>普通物理學(一)</h2><p>到現在還是很不解為什麼資工系要修普物，感覺會用到的也只有電磁學或做遊戲引擎時需要而已，像中央就已經廢掉了。而且聽說成大工程科學系甚至只有一學期的普物，為什麼資工要修比工科多啊?_?<br>我雖然學測自然15級，但高中時並不喜歡裡面的任何一科，物理因為相對要背的東西沒有那麼多，而且有時候會覺得把一堆符號拿來運算、推導答案的過程還蠻有趣的，所以並不排斥，不過因為不算拿手，可以的話能不修還是希望不要修。</p>
+<p>配分:點名10% 作業20% 期中30% 期末40%</p>
+<h3 id="點名"><a href="#點名" class="headerlink" title="點名"></a>點名</h3><p>點名是掃qrcode或輸入密碼來線上點名的，所以只要有認識的人拍給你密碼就可以不用去，所以我這學期普物也翹蠻多課的&gt;&lt;</p>
+<h3 id="作業"><a href="#作業" class="headerlink" title="作業"></a>作業</h3><p>作業大概每兩個禮拜會給三題左右，似乎是從教科書上抓下來的，個人覺得抓的題目都蠻不錯的。大考前助教會把自己寫的解答po上去供大家參考，但不得不吐槽一下，解答常常會用一些超出我們知識範圍、教授上課也沒教的方式解就算了，答案也有不少錯誤，有一次是在期中考當天發現助教昨天半夜把錯的解答改了。還有助教會把作業全部積到期末再一次改完，而且好像有交就是100分(但我最後幾份有被小扣一些分數)，所以不用指望可以從批改後的作業學到什麼。</p>
+<h3 id="期中期末"><a href="#期中期末" class="headerlink" title="期中期末"></a>期中期末</h3><p>題型大概是選擇題、證明、計算、問答。內容都是從作業和上課講義出的，但是因為要考證明和問答，對我來說沒有那麼好準備，像高中一樣只會算會踢到鐵板qq。最後分別是拿了70和65分。</p>
+<h3 id="成績-1"><a href="#成績-1" class="headerlink" title="成績"></a>成績</h3><p>在期末會有一個報告可以交，如果你原始分數會被當的話好像交了會很有幫助，聽說有人從40幾被拉到及格。因為坐那個報告不會花多少時間所以我也交了，但好像沒加到任何分ˋˊ 最後喜提79拿到第一個B。</p>
+<h2 id="程式設計-一"><a href="#程式設計-一" class="headerlink" title="程式設計(一)"></a>程式設計(一)</h2><p>因為我在高中有先學過一些程式(大概APCS實作4~5級程度) 所以這堂課算是蠻輕鬆度過的，也沒什麼去上課owo，雖然課程所用的語言是c而不是高中時用的c++，但也沒有甚麼要多學的地方，就是有些時候沒有一些函式庫可以用要自己刻很麻煩而已。除了三堂課外還有每周一次的助教課，大概會再多花2小時，很多人覺得助教課教的東西比實際上課好很多。<br>配分:作業40% 出席+助教課20% 期中期末各20%</p>
+<h3 id="作業-1"><a href="#作業-1" class="headerlink" title="作業"></a>作業</h3><p>有架一個unix系統的server，作業都要交到上面再由助教的腳本評分，作業都是由有競程經驗的助教出的，所以有蠻多有趣的題目，不過因為這堂課是程式設計，不會有困難的算法夾雜進去，印象中最難的只到前綴和和掃描線而已。而作業時限也都給很久，常常出作業的第一天就寫完，然後等助教釋出腳本測試。基本上絕大多數人都可以拿滿。</p>
+<h3 id="助教課"><a href="#助教課" class="headerlink" title="助教課"></a>助教課</h3><p>助教課會點名，所以必須到現場qq。會有助教輪流上去講課，然後期中期末前會有考前提示，還會辦kahoot玩，但我因為搶快太多次手殘按錯，所以跌出前五後就爆氣走人了xd 特別的是聖誕節的簡報也有專門設計成聖誕主題，可以看出來助教很用心。</p>
+<h3 id="期中期末-1"><a href="#期中期末-1" class="headerlink" title="期中期末"></a>期中期末</h3><p>滿分120，分成上機和手寫。其中上機大概只占40%，上機和手寫是分開考的，時限是3小時，而手寫則不限時，有人從晚上六點寫到半夜4點多，加上上機等於他在一科期中考花了13小時，真的蠻厲害的。上機的難度有點忘記了，但因為出題者和作業一樣都是助教，所以題目都還蠻有趣的。但手寫就一點都不有趣了，要物理意義的手刻一堆程式碼，題目多到要寫好幾面，而出題的是教授本人，他很喜歡出他的專業領域(網路)相關的程式題目，常常有很多很難處理的字串，寫的當下真的不會太舒服，但三小時後交卷出去呼吸到新鮮空氣的當下還蠻爽的。我兩次上機都是滿分，手寫雖然都被扣了一些分數但加起來也還是有破百，所以拿滿了這40%。</p>
+<p><img src="/img/post/image.jpg" srcset="/img/loading.gif" lazyload alt="附上我的手寫考卷，一次考試大概會寫兩大張四面，寫到手很酸"></p>
+<h3 id="成績-2"><a href="#成績-2" class="headerlink" title="成績"></a>成績</h3><p>就是穩穩的拿滿，看成績分布似乎有近半數人都拿A+，算是很佛的一堂課。</p>
+<h2 id="數位電路導論"><a href="#數位電路導論" class="headerlink" title="數位電路導論"></a>數位電路導論</h2>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AA%B2%E6%A5%AD/" class="category-chain-item">課業</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/academic/" class="print-no-link">#academic</a>
+      
+        <a href="/tags/ncku/" class="print-no-link">#ncku</a>
+      
+        <a href="/tags/csie/" class="print-no-link">#csie</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>成大資工 大一上(113-1)</div>
+      <div>https://coolranger.github.io/2025/07/03/ncku1131/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>Ranger</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>July 3, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/07/03/ram-update/" title="第一次升級ram">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">第一次升級ram</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/07/02/hello-world/" title="hi">
+                        <span class="hidden-mobile">hi</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script  src="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" ></script>
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
